@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>PSL Matche</title>
+    <link rel="text/css" href="./app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+	<div class="container" style="margin-left: 30%;margin-top: 15%;">
+    <label for="Name">Name  </label>
+    <input type="text" id="name"> 
+    <br>
+    <br>
+    <label for="Password">Password  </label>    
+    <input type="password" id="password">
+    <br>
+    <button id="submit">Sign In</button>
+</div>
+<script>
+
+document.getElementById("submit").addEventListener("click", function () {
+   if(document.getElementById("name").value == "admin" && document.getElementById("password").value == "admin"){
+ window.location.assign("http://localhost:8000/Login");
+   }
+});
+
+</script>
+  </body>
+
+</html

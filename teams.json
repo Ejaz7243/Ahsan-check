@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Quetta Gladiators",
+    "owner": "RANA Fawad"
+  },
+  {
+    "id": 2,
+    "name": "Islamabad United",
+    "owner": "Muhammad Saleem"
+  },
+  {
+    "id": 3,
+    "name": "Lahore Qalandars",
+    "owner": "RANA F"
+  },
+  {
+    "id": 4,
+    "name": "Peshawar Zalmi",
+    "owner": "Afridi"
+  },
+  {
+    "id": 5,
+    "name": "Karachi Kings",
+    "owner": "Sulman Iqbal"
+  },
+  {
+    "id": 6,
+    "name": "Multan Sultans",
+    "owner": "Ali Tareen"
+  },
+
+  
+]

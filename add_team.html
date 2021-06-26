@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Add team</title>
+  </head>
+  <body>
+    <form action="/login" method="post">
+      Add Match <br /><br />
+      Team 1 : <br />
+      <br />
+      <input type="text" name="username" id="name" required /><br /><br />
+      Team 2 : <br />
+      <br />
+      <input type="text" name="username" id="name2" required /><br /><br />
+      Date:<br /><br />
+      <input
+        type="text"
+        name="password"
+        placeholder="Date"
+        id="date"
+        required
+      />
+
+      <input type="submit" value="Add Match" />
+    </form>
+    <script>
+      const userAction = async () => {
+        var t_name = document.getElementById("name").value;
+        var t_name2 = document.getElementById("name2").value;
+        var date = document.getElementById("date").value;
+        await $.ajax("http://localhost:8000/teams", {
+          method: "POST",
+          body: { t_name, t_name2, date },
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+      };
+    </script>
+  </body>
+</html>
